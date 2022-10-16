@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Product preview card component</title>
 
@@ -14,23 +17,48 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
- <h1 class="text-3xl text-blue-50 bg-[#777] border pt-2 p-4">Hello Tailwind</h1>
+<body class="font-montserrat font-medium bg-cream text-[14px] min-h-screen">
+  <!--card section-->
+  <section class="p-5">
+    <!--flex container-->
+    <div class="container mx-auto flex justify-center max-w-lg md:h-[340px]">
+      <!-- image -->
+      <div class="hidden overflow-hidden flex-1 h-full rounded-l-md md:block">
+       <img src="./images/image-product-desktop.jpg" alt="perfume" class="object-cover object-center">
+      </div>
+    <!-- card -->
+     <div class="block rounded-md overflow-hidden max-w-[260px] mx-auto md:max-w-none flex-1 h-full md:rounded-none">
+      <img src="./images/image-product-mobile.jpg" alt="perfume" class="md:hidden">
+      <!-- content -->
+      <div class="p-4 h-full bg-white space-y-2 md:p-[17px] md:rounded-r-md md:space-y-4">
+        <!-- head -->
+        <p class="text-darkBlue uppercase tracking-[4px]">perfume</p>
+        <h1 class="text-2xl font-fraunces font-bold leading-6">
+          Gabrielle Essence<br>Eau De Parfum
+        </h1>
+        <!-- text -->
+        <p class="text-gray-700">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <!-- price -->
+        <div class="flex space-x-3 items-center">
+          <p class="text-darkCyan font-bold text-2xl font-fraunces">$149.99</p>
+          <p class="line-through text-gray-600 text-xs">$169.99</p>
+        </div>
+        <!-- button -->
+        <button class="w-full bg-darkCyan text-white rounded-md relative group">
+          <!-- text -->
+          <div class="flex justify-center items-center text-white relative z-10 space-x-2">
+          <img src="./images/icon-cart.svg" alt="cart" class="inline-block">
+          <p class="py-2">Add to Cart</p>
+          </div>
+          <div class="absolute inset-0 rounded-md bg-darkBlue/0 m-0 ease-in-out duration-300 group-hover:bg-darkBlue/50"></div>
+        </button> 
+      </div>
+   </div>
+</div>
+</section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Mohamed Mostafa</a>.
   </div>
 </body>
 </html>
