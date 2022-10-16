@@ -29,8 +29,8 @@ Users should be able to:
 ![Moblie](./public/images/Screenshot%202022-10-16%20at%2014-40-57%20Frontend%20Mentor%20Product%20preview%20card%20component.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/product-preview-card-component-using-tailwind-Cato8P_-C7)
+- Live Site URL: [Live](https://mohamedmostafakhudari.github.io/product-preview-card-component/public/)
 
 ## My process
 
